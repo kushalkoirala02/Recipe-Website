@@ -405,11 +405,9 @@ padding-top: 40px;
 
 
 
-/* ========================================
-   ABOUT PAGE LOAD ANIMATION
-======================================== */
+ 
 
-/* Initial state */
+ 
 .chefdiv,
 .textdiv,
 .lineandtextcontainer,
@@ -419,39 +417,36 @@ padding-top: 40px;
 }
 
 
-/* Chef image */
+ 
 .chefdiv {
     animation: chefImageReveal 1s ease-out 0.15s forwards;
 }
 
 
-/* Main text */
+ 
 .textdiv {
     animation: textReveal 0.9s ease-out 0.35s forwards;
 }
 
 
-/* Timeline */
+ 
 .lineandtextcontainer {
     animation: timelineReveal 0.8s ease-out 0.65s forwards;
 }
 
 
-/* House rule */
+ 
 .afterdate-box {
     animation: houseRuleReveal 0.8s ease-out 0.9s forwards;
 }
 
-
-/* Button */
+ 
 #hellobutton {
     animation: buttonReveal 0.7s ease-out 1.15s forwards;
 }
 
 
-/* ========================================
-   KEYFRAMES
-======================================== */
+ 
 
 @keyframes chefImageReveal {
     from {
@@ -520,15 +515,10 @@ padding-top: 40px;
 /*  
    HAMBURGER
  */
- #hamburger:hover,
-#hamburger:focus,
-#hamburger:active {
-    background: transparent !important;
-    color: #2D241E;
-    border: none;
-    outline: none;
-    box-shadow: none;
-}
+ /* ==============================
+   HAMBURGER MENU
+   ============================== */
+
 .hamburger {
     display: none;
 
@@ -547,6 +537,9 @@ padding-top: 40px;
     width: auto;
     height: auto;
 }
+.mobile-menu{
+    display: none;
+}
 @media (max-width: 1100px) {
 
     nav {
@@ -557,7 +550,8 @@ padding-top: 40px;
         display: none;
 
         position: absolute;
- 
+
+        /* Start directly below the navbar */
         top: 100%;
         left: 0;
 
@@ -577,10 +571,12 @@ padding-top: 40px;
 
       
     }
-       #hamburger {
+    .hamburger{
         display: block;
+    }
+
+    nav button{
         background-color: #F8F5EF;
-         
     }
 
     .mobile-menu.active {
@@ -608,7 +604,6 @@ padding-top: 40px;
         border: none;
     }
 }
-  
 
 
  
@@ -817,6 +812,9 @@ padding-top: 40px;
         line-height: 1.4;
     }
 
+    #hellobuttona{
+        text-decoration: none;
+    }
 
    
 
@@ -879,6 +877,10 @@ padding-top: 40px;
         display: block;
          
     }
+     #hellobuttona{
+        text-decoration: none;
+    }
+
    
  
 
@@ -1108,4 +1110,8 @@ padding-top: 40px;
     .afterdate-box h3 {
         font-size: 16px;
     }
+     #hellobuttona{
+        text-decoration: none;
+    }
+
 }

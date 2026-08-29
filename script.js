@@ -207,12 +207,13 @@ if (search) {
 
 const form = document.getElementById("formid");
 
-form.addEventListener("submit", function () {
-    setTimeout(() => {
-        form.reset();
-    }, 1000);
-});
-
+if (form) {
+    form.addEventListener("submit", function () {
+        setTimeout(() => {
+            form.reset();
+        }, 1000);
+    });
+}
 
 const hamburger = document.getElementById("hamburger");
 const mobileMenu = document.getElementById("mobileMenu");
@@ -227,5 +228,6 @@ hamburger.addEventListener("click", function () {
     } else {
         hamburger.textContent = "☰";
     }
+     console.log("Button Clicked");
 
 });
