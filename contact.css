@@ -790,6 +790,9 @@ body{
         margin: 25px auto 0;
         display: block;
     }
+    #subscribeboxdesktop{
+        display: none;
+    }
 
 
     /* RIGHT SIDE */
@@ -1287,6 +1290,9 @@ body{
         max-width: 100%;
 
         gap: 35px;
+    }
+ #subscribeboxdesktop{
+        display: none;
     }
 
 
