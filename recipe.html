@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="recipe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Karla:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logodiv">
+                <h1> Table <span id="and"> & </span> Ember </h1>
+                <p> STORIES . <span> RECIPES . </span> <span> FLAVOUR</span></p>
+            </div>
+            <ul class="navlinks">
+                <li id="home" onclick="activeNavigation(home)"><a href="index.html"> Home </a> </li>
+                <li id="recipe" onclick="activeNavigation(recipe)"><a href="recipe.html"> Recipe </a> </li>
+                <li id="aboutChef" onclick="activeNavigation(about)"> <a href="about.html"> About Chef </a></li>
+                <li id="contact" onclick="activeNavigation(contact)"> <a href="contact.html"> Contact </a> </li>
+
+            </ul>
+            <button> ✉ Subscribe </button>
+                 <!-- Hamburger -->
+        <button class="hamburger" id="hamburger">
+            ☰
+        </button>
+
+
+        <!-- Mobile / Small Laptop Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+
+            <a href="index.html"  >Home</a>
+
+            <a href="recipe.html"  >Recipe</a>
+
+            <a href="about.html" >About Chef</a>
+
+            <a href="contact.html"  >Contact</a>
+
+            <button>✉ Subscribe</button>
+
+        </div>
+        
+        </nav>
+    </header>
+
+    <!-- hero section -->
+
+    <section>
+
+        <div class="secdiv">
+
+            <h2> Recipes </h2>
+            <h3>Simple. Seasonal. Delicious .</h3>
+            <div class="line1"> </div>
+            <p> Real recipes for life </p>
+
+        </div>
+
+
+        <div class="buttonrecipes">
+            <div>
+                <button id="all-btn" onclick="displayCategory('all', this)"> All </button>
+                <button onclick="displayCategory('pasta', this)"> Pasta </button>
+                <button onclick="displayCategory('momo', this)"> Momo </button>
+                <button onclick="displayCategory('noodles', this)"> Noddles </button>
+                <button onclick="displayCategory('chicken', this)"> Chicken </button>
+                <button id="desert-btn" onclick="displayCategory('desert', this)"> Desert</button>
+            </div>
+
+            <div class="searchdiv">
+                <input type="text" placeholder="🔎  Search.."  id="recipeSearch"/>
+            </div>
+        </div>
+
+        <!-- box -->
+
+
+        <div class="recipetitlediv">
+
+            <h2> Featured recipes </h2>
+        </div>
+
+        <div class="recipeboxmaincontainer">
+            <div class="recipebox pasta">
+                <img src="pasta3.png" alt="pastaimage" />
+
+                <button id="pasta"> Pasta </button>
+                <h2> Midnight Tomato Bucatini </h2>
+                <p id="mainp"> A twenty minute sauce that tastes like it</p>
+                <p> slimmered all afternoon-the trick is browning </p>
+                <p> the paste until it turns brick red. </p>
+
+                <div class="timeandservediv">
+                    <h3> ⏱️ 35 min </h3>
+                    <h3> 🍽️ Serves 4 </h3>
+                    <h3> 🥄 Easy </h3>
+
+
+                </div>
+
+                <div class="readrecipe">
+                    <a href="pasta.html"> <button> Read The Recipe </button> </a>
+                </div>
+            </div>
+
+
+            <!-- box 2 -->
+
+            <div class="recipebox momo">
+                <img src="momo.png" alt="Momoimage" />
+
+                <button id="pasta"> Momo </button>
+                <h2> Steamed Chicken Momos </h2>
+                <p id="mainp"> Freshly folded dumplings filled with juicy chicken</p>
+                <p>and herbs—the secret is letting the filling rest</p>
+                <p> before steaming for maximum flavor. </p>
+
+                <div class="timeandservediv">
+                    <h3> ⏱️ 35 min </h3>
+                    <h3> 🍽️ Serves 4 </h3>
+                    <h3> 🥄 Easy </h3>
+
+
+                </div>
+
+                <div class="readrecipe">
+                    <a href="steammomo.html"> <button> Read The Recipe </button> </a>
+                </div>
+            </div>
+
+
+
+            <!-- box 3 -->
+
+            <div class="recipebox chicken">
+                <img src="chickenlolipop1.png" alt="Chickenlolipopimage" />
+
+                <button id="chickenlolipop"> Chickenlolipop </button>
+                <h2>Crispy Chicken Lollipop </h2>
+                <p id="mainp"> Golden, crispy chicken with a juicy center—the secret</p>
+                <p> is marinating overnight and frying at </p>
+                <p> the perfect temperature for maximum crunch.</p>
+
+                <div class="timeandservediv">
+                    <h3> ⏱️ 35 min </h3>
+                    <h3> 🍽️ Serves 4 </h3>
+                    <h3> 🥄 Hard </h3>
+
+
+                </div>
+
+                <div class="readrecipe">
+                    <a href="Chickenlolipop.html"> <button> Read The Recipe </button> </a>
+                </div>
+            </div>
+
+
+
+
+            <div class="recipebox momo">
+                <img src="chillymomo.png" alt="pastaimage" />
+
+                <button id="chickenlolipop"> Chilly Momo </button>
+                <h2> Spicy Chilli Momo </h2>
+                <p id="mainp"> Juicy momos tossed with spicy chilli, garlic,</p>
+                <p>peppers, and onions—the secret is giving the </p>
+                <p> auce a quick high-heat toss for a smoky finish. </p>
+
+                <div class="timeandservediv">
+                    <h3> ⏱️ 35 min </h3>
+                    <h3> 🍽️ Serves 4 </h3>
+                    <h3> 🥄 Medium </h3>
+
+
+                </div>
+
+                <div class="readrecipe">
+                    <a href="chillimomo.html"> <button> Read The Recipe </button> </a>
+                </div>
+            </div>
+
+
+            <div class="recipebox desert">
+                <img src="chocolatecake.png" alt="pastaimage" />
+
+                <button id="chickenlolipop"> Chocolate Cake </button>
+                <h2> Classic Chocolate Cake </h2>
+                <p id="mainp"> A soft, rich chocolate cake with deep cocoa</p>
+                <p> the secret is not overmixing the batter for </p>
+                <p> a tender, moist crumb. </p>
+
+                <div class="timeandservediv">
+                    <h3> ⏱️ 50 min </h3>
+                    <h3> 🍽️ Serves 8 </h3>
+                    <h3> 🥄 Medium </h3>
+
+
+                </div>
+
+                <div class="readrecipe">
+                    <a href="Cake.html"> <button> Read The Recipe </button> </a>
+                </div>
+            </div>
+
+
+
+            <div class="recipebox chicken">
+                <img src="Veg burger.png" alt="pastaimage" />
+
+                <button id="chickenlolipop"> Veg burger </button>
+                <h2> Midnight Tomato Bucatini </h2>
+                <p id="mainp"> A twenty minute sauce that tastes like it</p>
+                <p> slimmered all afternoon-the trick is browning </p>
+                <p> the paste until it turns brick red. </p>
+
+                <div class="timeandservediv">
+                    <h3> ⏱️ 35 min </h3>
+                    <h3> 🍽️ Serves 4 </h3>
+                    <h3> 🥄 Easy </h3>
+
+
+                </div>
+
+                <div class="readrecipe">
+                    <button> Read The Recipe </button>
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="recipebox1 desert">
+                <img src="juju Dhau.png" alt="pastaimage" />
+
+                <button id="chickenlolipop"> Juju Dhau </button>
+                <h2> Creamy Juju Dhau </h2>
+                <p id="mainp"> Rich, creamy yogurt with a naturally sweet</p>
+                <p> tang—the secret is letting it set slowly for </p>
+                <p> that signature thick, silky texture. </p>
+
+                <div class="timeandservediv">
+                    <h3> ⏱️ 20 min </h3>
+                    <h3> 🍽️ Serves 4 </h3>
+                    <h3> 🥄 Easy </h3>
+
+
+                </div>
+
+                <div class="readrecipe">
+                    <a href="jujudhau.html"> <button> Read The Recipe </button> </a>
+                </div>
+            </div>
+
+
+            <div class="recipebox1 noodles">
+                <img src="Chickenchowmin.png" alt="pastaimage" />
+
+                <button id="chickenlolipop"> Chiken Chowmin </button>
+                <h2> Savory Chicken Chowmein </h2>
+                <p id="mainp"> Stir-fried noodles tossed with juicy chicken and</p>
+                <p> crisp vegetables—the secret is cooking everything</p>
+                <p> over high heat for that smoky wok flavor. </p>
+
+                <div class="timeandservediv">
+                    <h3> ⏱️ 25 min </h3>
+                    <h3> 🍽️ Serves 4 </h3>
+                    <h3> 🥄 Easy </h3>
+
+
+                </div>
+
+                <div class="readrecipe">
+                    <a href="chickenchowmin.html"> <button> Read The Recipe </button> </a>
+                </div>
+            </div>
+
+
+
+            <div class="recipebox1 chicken">
+                <img src="chillychicken.png" alt="Chickenimage" />
+
+                <button id="chickenlolipop"> Chilly chicken </button>
+                <h2> Crispy Chilli Chicken</h2>
+                <p id="mainp"> Crispy chicken tossed in a bold chilli sauce</p>
+                <p> with peppers and onions—the secret is getting</p>
+                <p> he chicken golden before adding the sauce. </p>
+
+                <div class="timeandservediv">
+                    <h3> ⏱️ 30 min </h3>
+                    <h3> 🍽️ Serves 4 </h3>
+                    <h3> 🥄 Medium </h3>
+
+
+                </div>
+
+                <div class="readrecipe">
+                    <button> Read The Recipe </button>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="loadmorediv">
+            <button class="loadmore-btn" id="loadmore" onclick="displayBox()"> Load More </button>
+        </div>
+
+
+
+    </section>
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="mainfooterdiv">
+
+            <div>
+                <h2 id="titlefooter"> Table & Ember </h2>
+                <p class="titleptext1"> A kitchen journal of slow lunches, fast</p>
+                <p class="titleptext2"> weeknights and the technique behind both. </p>
+            </div>
+
+            <div class="secondtitle">
+                <h3> READ </h3>
+                <p id="allrecipes"> All recipes</p>
+                <p> About the chef </p>
+                <p> Contact & newsletter </p>
+            </div>
+            <div class="contactfooter">
+                <h3> Contact </h3>
+                <p id="contactfp"> 📍 Biratnagar, Nepal </h3>
+                <p> 📧 hello@tableandember.com</p>
+                <p> 📞 +977 98XXXXXXXX </p>
+            </div>
+
+            <div class="thirdtitle">
+                <h3> kitchen hours </h3>
+                <p id="thirdtitlep"> New recipe every Thursday morning.</p>
+                <p> tableember@gmail.com</p>
+            </div>
+
+
+
+        </div>
+
+        <div class="icons">
+
+            <a> <i class="fa-brands fa-facebook"></i> </a>
+            <a> <i class="fa-brands fa-instagram"></i> </a>
+            <a> <i class="fa-brands fa-youtube"></i> </a>
+        </div>
+
+        <div class="line"></div>
+
+        <p id="lastp1"> © 2026 Table & Ember. Cooked, written and photographed in-house. </p>
+        <p id="lastp2"> Developed by Kushal Koirala </p>
+    </footer>
+
+
+
+
+
+
+    <script src="script.js"> </script>
+</body>
+
+</html>

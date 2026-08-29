@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Karla:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logodiv">
+                <h1> Table <span id="and"> & </span> Ember </h1>
+                <p> STORIES . <span> RECIPES . </span> <span> FLAVOUR</span></p>
+            </div>
+            <ul class="navlinks">
+                <li id="home" onclick="activeNavigation(home)"><a href="index.html"> Home </a> </li>
+                <li id="recipe" onclick="activeNavigation(recipe)"><a href="recipe.html"> Recipe </a> </li>
+                <li id="aboutChef" onclick="activeNavigation(about)"> <a href="about.html"> About Chef </a></li>
+                <li id="contact" onclick="activeNavigation(contact)"> <a href="contact.html"> Contact </a> </li>
+
+            </ul>
+            <button> ✉ Subscribe </button>
+            <button class="hamburger" id="hamburger">
+            ☰
+        </button>
+
+
+       <!-- Mobile / Small Laptop Menu  -->
+        <div class="mobile-menu" id="mobileMenu">
+
+            <a href="index.html"  >Home</a>
+
+            <a href="recipe.html"  >Recipe</a>
+
+            <a href="about.html" >About Chef</a>
+
+            <a href="contact.html"  >Contact</a>
+
+            <button>✉ Subscribe</button>
+
+        </div>
+        </nav>
+    </header>
+
+    <!-- Contact -->
+
+
+    <section>
+        <div class="containercontact">
+            <div class="contactdiv">
+                <h2> Get In Touch . </h2>
+                <h3> Let's cook together</h3>
+                <p id="p1"> Have a question, a recipe idea, or a collaboration in mind ? </p>
+                <p> I'd love to hear from you, </p>
+                <p> Let's create something delicious !</p>
+
+                <img src="cokkingimgchef.png" alt="chef" />
+ 
+                <div class="gmailsubsflexdiv"> 
+                    <div class="detailslist"> 
+                <div class="gmaildiv"> 
+                    <h4> <span>     <i class="fa-solid fa-envelope"></i>  </span> Email</h4>
+                    <h5> tableember@gmail.com </h5>
+                </div>
+
+                <div class="replytimediv"> 
+                    <h4> <span>     <i class="fa-regular fa-clock"></i>  </span> Reply Time</h4>
+                    <h5> Within two working days </h5>
+                </div>
+
+                   <div class="testkitchendiv"> 
+                    <h4> <span>     <i class="fa-solid fa-kitchen-set"></i>   </span> Test Kitchen </h4>
+                    <h5>Biratnagar 3, Morang </h5>
+                </div>
+
+        </div>  
+   <div class="subscribebox">
+            <div class="subscribecontentdiv">
+                <h3> The Thursday Letter </h3>
+                <h2 id="h2text"> One recipe, one technique, every Week . </h2>
+               
+
+                <div class="subscribeandbtndiv">
+                    <input type="email" placeholder="you@kitchen.com" />
+                    <button> Join the list </button>
+                </div>
+
+                <p id="ptext3"> One email each Thursday. No spam, unsubscribe anytime.</p>
+            </div>
+
+ 
+        </div>
+
+
+
+                </div>
+                
+
+            </div>
+
+
+ 
+            
+            <form class="formdiv" id="formid" action="https://formspree.io/f/mwlevznr" method="POST">
+                <div class="containernameemail">
+                    <div class="namediv">
+                        <label for="name"> Name </label> <br> <br>
+                        <input type="text" id="name"  name = "name" placeholder="Enter your name..." required /><br><br>
+                    </div>
+                    <div class="emaildiv">
+                        <label for="email"> Email </label> <br><br>
+                        <input type="email" id="email" name = "email" placeholder="Enter your email..." required />
+                    </div>
+
+
+                </div>
+
+
+                <div class="subjectdiv">
+                    <label for="subject"> Subject </label> <br> <br>
+                    <input type="text" id="subject" name="subject" placeholder="Enter your name..." required /><br><br>
+                </div>
+
+                <div class="textareadiv">
+                <label for="textmessage">Your Message </label> <br> <br>
+                <textarea id="textmessage"  name = "message" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button class="sendmessagebtn"  type="submit"  > Send Message </button>
+            
+
+            </form>
+    </section>
+
+
+     <!-- footer -->
+
+    <footer>
+        <div class="mainfooterdiv">
+
+            <div>
+                <h2 id="titlefooter"> Table & Ember </h2>
+                <p class="titleptext1"> A kitchen journal of slow lunches, fast</p>
+                <p class="titleptext2"> weeknights and the technique behind both. </p>
+            </div>
+
+            <div class="secondtitle">
+                <h3> READ </h3>
+                <p id="allrecipes"> All recipes</p>
+                <p> About the chef </p>
+                <p> Contact & newsletter </p>
+            </div>
+                <div class="contactfooter">
+                <h3 > Contact </h3>
+                <p id="contactfp"> 📍 Biratnagar, Nepal </h3>
+                <p> 📧 hello@tableandember.com</p>
+                <p> 📞 +977 98XXXXXXXX </p>
+            </div>
+
+            <div class="thirdtitle">
+                <h3> kitchen hours </h3>
+                <p id="thirdtitlep"> New recipe every Thursday morning.</p>
+                <p> tableember@gmail.com</p>
+            </div>
+         
+
+
+        </div>
+
+        <div class="icons">
+
+            <a> <i class="fa-brands fa-facebook"></i> </a>
+            <a> <i class="fa-brands fa-instagram"></i> </a>
+            <a> <i class="fa-brands fa-youtube"></i> </a>
+        </div>
+
+        <div class="line"></div>
+
+        <p id="lastp1"> © 2026 Table & Ember. Cooked, written and photographed in-house. </p>
+        <p id="lastp2"> Developed by Kushal Koirala </p>
+    </footer>
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

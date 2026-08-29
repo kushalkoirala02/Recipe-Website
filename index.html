@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Karla:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logodiv">
+                <h1> Table <span id="and"> & </span> Ember </h1>
+                <p> STORIES . <span> RECIPES . </span> <span> FLAVOUR</span></p>
+            </div>
+            <ul class="navlinks">
+                <li id="home" onclick="activeNavigation(home)"><a href="index.html"> Home </a> </li>
+                <li id="recipe" onclick="activeNavigation(recipe)"><a href="recipe.html"> Recipe </a> </li>
+                <li id="aboutChef" onclick="activeNavigation(about)"> <a href="about.html"> About Chef </a></li>
+                <li id="contact" onclick="activeNavigation(contact)"> <a href="contact.html"> Contact </a> </li>
+
+            </ul>
+           <a href="#subscribesec">   <button class="subscribe"> ✉ Subscribe </button> </a>
+       <button class="hamburger" id="hamburger">
+            ☰
+        </button>
+
+
+        <!-- Mobile / Small Laptop Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+
+            <a href="index.html"  >Home</a>
+
+            <a href="recipe.html"  >Recipe</a>
+
+            <a href="about.html" >About Chef</a>
+
+            <a href="contact.html"  >Contact</a>
+   <button>✉ Subscribe</button> 
+
+        </div>
+        </nav>
+    </header>
+
+
+    <section id="herosec">
+        <div class="mainherodiv">
+            <div class="herodiv">
+                <h2> WELCOME TO THE JOURNAL </h2>
+                <h1> Food stories</h1>
+                <h3> worth sharing. </h3>
+
+                <p id="herop1">Honest recipes, chef tips, and Kitchen inspiration </p>
+
+                <p id="herop2">for real life and every season.</p>
+                <a href="recipe.html">    <button id="explore">    Explore Recipes → </button>   </a>
+                <a href="about.html"    >  <button id="aboutchef-btn"> Meet the Chef </button> </a>
+
+
+                <div class="profilemaindiv">
+                    <div class="imgcontainer">
+                        <img src="profile3.png" class="imgdiv1"></img>
+                        <img src="profile2.png" class="imgdiv2"></img>
+                        <img src="profile1.png" class="imgdiv3"></img>
+                    </div>
+
+
+                    <div class="profiletext">
+                        <h2> Join 25K+ food lovers</h2>
+                        <p> receiving fresh inspirations </p>
+                        <p> every week.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="videodivhero">
+                <img src="https://cdn.pixabay.com/photo/2020/09/21/12/40/meal-5589925_1280.jpg" id="imghero" />
+                <button class="play-btn">▶</button>
+                <h2 id="h2text"> Watch Chef Cooking </h2>
+                <h3 id="h3text"> Chinese noodles </h3>
+                <iframe id="herovideo" width="560" height="315"
+                    src="https://www.youtube.com/embed/GtQgXCteMpo?si=MqOcXhjAU27kPT3I" title="YouTube video player"
+                    frameborder="0" allow="autoplay; fullscreen" allowfullscreen>>
+                </iframe>
+            </div>
+
+
+
+
+
+        </div>
+
+        <div>
+            <div class="cheftiphero">
+                <h2> 👨‍🍳 CHEF'S TIP</h2>
+                <p id="chefparatips"> Balance your sauce with sweety, </p>
+                <p> salty and spicy notes for a </p>
+                <p> perfect noodle taste . </p>
+            </div>
+        </div>
+        <!-- 
+Always salt your pasta water generously -->
+
+        <div class="averagedetailscontainers">
+            <div class="averagetextdiv">
+                <div>
+                    <h2> 140 + </h2>
+                    <p> RECIPES TESTED </p>
+                </div>
+                <div>
+                    <h2> 38 min</h2>
+                    <p> AVERAGE COOK TIME </p>
+                </div>
+                <div>
+                    <h2> 24,000</h2>
+                    <p> READERS COOKING ALONE </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe -->
+    <section id="recipesec">
+
+        <div class="recipetitlediv">
+            <p> THIS WEEK'S TABLE </p>
+            <h2> Featured recipes </h2>
+        </div>
+
+        <div class="recipeboxmaincontainer">
+            <div class="recipebox">
+                <img src="pasta3.png" alt="pastaimage" />
+
+                <button id="pasta"> Pasta </button>
+                <h2> Midnight Tomato Bucatini </h2>
+                <p id="mainp"> A twenty minute sauce that tastes like it</p>
+                <p> slimmered all afternoon-the trick is browning </p>
+                <p> the paste until it turns brick red. </p>
+
+                <div class="timeandservediv">
+                    <h3> ⏱️ 35 min </h3>
+                    <h3> 🍽️ Serves 4 </h3>
+                    <h3> 🥄 Easy </h3>
+
+
+                </div>
+
+                <div class="readrecipe">
+                    <button> Read The Recipe </button>
+                </div>
+            </div>
+
+
+            <!-- box 2 -->
+
+            <div class="recipebox">
+                <img src="momo.png" alt="Momoimage" />
+
+                <button id="pasta"> Momo </button>
+                <h2> Steamed Chicken Momos </h2>
+                <p id="mainp"> Freshly folded dumplings filled with juicy chicken</p>
+                <p>and herbs—the secret is letting the filling rest</p>
+                <p> before steaming for maximum flavor. </p>
+
+                <div class="timeandservediv">
+                    <h3> ⏱️ 35 min </h3>
+                    <h3> 🍽️ Serves 4 </h3>
+                    <h3> 🥄 Easy </h3>
+
+
+                </div>
+
+                <div class="readrecipe">
+                    <button> Read The Recipe </button>
+                </div>
+            </div>
+
+
+
+            <!-- box 3 -->
+
+            <div class="recipebox">
+                <img src="chickenlolipop1.png" alt="Chickenlolipopimage" />
+
+                <button id="chickenlolipop"> Chickenlolipop </button>
+                <h2>Crispy Chicken Lollipop </h2>
+                <p id="mainp"> Golden, crispy chicken with a juicy center—the secret</p>
+                <p> is marinating overnight and frying at </p>
+                <p> the perfect temperature for maximum crunch.</p>
+
+                <div class="timeandservediv">
+                    <h3> ⏱️ 35 min </h3>
+                    <h3> 🍽️ Serves 4 </h3>
+                    <h3> 🥄 Easy </h3>
+
+
+                </div>
+
+                <div class="readrecipe">
+                    <button> Read The Recipe </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- Subscribe -->
+
+
+    <section id="subscribesec">
+
+        <div class="subscribebox">
+            <div class="subscribecontentdiv">
+                <h3> The Thursday Letter </h3>
+                <h2 id="h2text"> One recipe, one technique, every </h2>
+                <h2 id="weektxt"> Week .</h2>
+                <p id="ptext1"> Join 24,000 home cooks getting the week's recipe plus the notes that didn't fit on the
+                </p>
+                <p id="ptext2"> page. </p>
+
+                <div class="subscribeandbtndiv">
+                    <input type="email" placeholder="you@kitchen.com" />
+                    <button> Join the list </button>
+                </div>
+
+                <p id="ptext3"> One email each Thursday. No spam, unsubscribe anytime.</p>
+            </div>
+
+            <div class="subsecimgdiv">
+                <img src="chefsubscribebg.png" alt="Chef" />
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="mainfooterdiv">
+
+            <div>
+                <h2 id="titlefooter"> Table & Ember </h2>
+                <p class="titleptext1"> A kitchen journal of slow lunches, fast</p>
+                <p class="titleptext2"> weeknights and the technique behind both. </p>
+            </div>
+
+            <div class="secondtitle">
+                <h3> READ </h3>
+                <p id="allrecipes"> All recipes</p>
+                <p> About the chef </p>
+                <p> Contact & newsletter </p>
+            </div>
+                <div class="contactfooter">
+                <h3 > Contact </h3>
+                <p id="contactfp"> 📍 Biratnagar, Nepal </h3>
+                <p> 📧 hello@tableandember.com</p>
+                <p> 📞 +977 98XXXXXXXX </p>
+            </div>
+
+            <div class="thirdtitle">
+                <h3> kitchen hours </h3>
+                <p id="thirdtitlep"> New recipe every Thursday morning.</p>
+                <p> tableember@gmail.com</p>
+            </div>
+         
+
+
+        </div>
+
+        <div class="icons">
+
+            <a> <i class="fa-brands fa-facebook"></i> </a>
+            <a> <i class="fa-brands fa-instagram"></i> </a>
+            <a> <i class="fa-brands fa-youtube"></i> </a>
+        </div>
+
+        <div class="line"></div>
+
+        <p id="lastp1"> © 2026 Table & Ember. Cooked, written and photographed in-house. </p>
+        <p id="lastp2"> Developed by Kushal Koirala </p>
+    </footer>
+
+
+
+
+
+
+
+    <script src="script.js"> </script>
+</body>
+
+</html>

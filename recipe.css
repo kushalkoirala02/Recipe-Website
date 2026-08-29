@@ -1,0 +1,1561 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+     border-bottom:1px solid #E7DFD3;
+       background:#F8F5EF;
+}
+
+nav {
+    width: 90%;
+    max-width: 1400px;
+    height: 90px;
+ margin: auto;
+
+
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    
+    /* background: rgba(248, 245, 239, 0.9);
+    backdrop-filter: blur(12px);
+    border: 0.5px solid rgb(190, 186, 186); */
+    
+}
+
+nav button {
+     height: 40px;
+     width: 130px;
+     text-align: center;
+     padding-bottom:5px ;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #B85C38;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    border: none;
+    margin-left: 50px;
+}
+
+nav button:hover {
+
+    background: #A24D2C;
+    transform: translateY(-2px);
+}
+
+ul {
+    font-size: 19px;
+    font-weight: 600;
+    font-family: "Karla", sans-serif;
+    display: flex;
+    list-style-type: none;
+    margin-left: 180px;
+    gap: 40px;
+
+}
+.logodiv h2 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Fraunces", serif;
+
+    color: #2D241E;
+
+}
+
+.logodiv {
+    margin-left: 40px;
+}
+
+.logodiv p {
+    font-size: 12px;
+
+    font-family: "Fraunces", serif;
+    letter-spacing: 1.5px;
+
+
+}
+
+#and {
+    color: #B85C38;
+}
+
+.navactive a{
+    color: #B85C38;  
+}
+li a{
+
+    text-decoration: none;
+    color: #2D241E; 
+    padding-bottom: 5px;
+
+
+}
+
+.navlinks a:hover{
+
+    border-bottom: 2px solid #B85C38;
+
+}
+
+
+/* Section */
+
+section{
+    height: auto;
+    width: 100%;
+    background-color: #F8F5EF;
+    padding-bottom: 100px;
+}
+
+.secdiv{
+    width: 100%;
+    text-align: center;
+    
+
+}
+
+.secdiv h2{
+    color: #B85C38;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding-top: 40px;
+    font-family: "Karla";
+}
+
+.secdiv h3{
+    color:#2D241E;
+    font-size: 40px;
+    padding-top: 10px;
+
+}
+.line1{
+    height: 0px;
+    width: 500px;
+   border: 1px solid rgb(252, 125, 6);
+   margin-top: 20px;
+   margin-left:510px;
+
+}
+
+.secdiv p{
+    padding-top: 20px;
+}
+
+.buttonrecipes{
+    height: 90px;
+    width: 85%;
+    background-color: white;
+    border-radius: 17px;
+    margin-top: 30px;
+    margin-left: 115px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+
+.buttonrecipes button{
+    height: 40px;
+    width: 80px;
+    font-size: 16px;
+    color: black;
+    background-color: rgb(233, 219, 203); 
+
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-top: 22px;
+    margin-left: 30px;
+    
+}
+
+.searchdiv input{
+    height: 40px;
+    width: 340px;
+    outline: none;
+    padding-left: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    
+    margin-top: 20px;
+    margin-right: 30px;
+}
+ 
+ #desert-btn{
+    margin-right: 90px;
+ }
+
+  
+
+ /* Recipes */
+
+
+ .recipetitlediv{
+ 
+}
+ 
+.recipetitlediv h2{
+    font-size: 42px;
+    color: #B85C38;
+    padding-left: 150px;
+    padding-top: 40px;
+    font-size: "Karela";
+    
+    
+}
+
+.recipebox{
+   height: 600px;
+   width: 25%;
+   background-color: white;
+   margin-top: 40px;
+  
+     transition: 0.4s ease;
+    cursor: pointer;
+   border-radius: 20px;
+   position: relative;
+}
+
+ 
+.recipebox:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.18);
+}
+
+.recipebox img{
+    height: 340px;
+    width: 100%;
+      
+     position: relative;
+        border-top-right-radius: 15px;
+     border-top-left-radius: 15px;
+     border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+}
+ 
+
+#pasta{
+     height: 35px;
+     width: 80px;
+     border-radius: 20px;
+     color: white;
+   background: rgba(18, 14, 14, 0.174);
+   backdrop-filter:  blur(10px);
+   position: absolute;
+    left: 40px;
+    top: 20px;
+   
+   
+      
+     border: none;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     padding-top: 1px;
+     font-weight: 700;
+}
+.recipebox h2{
+    padding-left: 20px;
+    font-size: 28px;
+    color: #2D241E;
+    font-family: "karela";
+    padding-top: 20px;
+}
+
+.recipebox p{
+    padding-left: 20px;
+   
+     font-size: 16px;
+     color: #5F554D;
+}
+#mainp{
+    padding-top: 10px;
+}
+
+.timeandservediv{
+    display: flex;
+    font-size: 13px ;
+    justify-content: space-around;
+    color: #5F554D;
+    padding-top: 20px;
+
+ 
+    
+}
+
+.readrecipe{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    flex-wrap: wrap;
+
+}
+
+.readrecipe button{
+    background-color: #b55833;
+    color: white;
+    font-size: 17px;
+    font-family: 'Karela';
+    height: 40px;
+    width: 170px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 30px;
+      transition: 0.4s ease;
+    cursor: pointer;
+
+}
+
+.readrecipe button:hover{
+    
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.18);
+ 
+}
+
+.recipeboxmaincontainer{
+     display: flex;
+     justify-content: center;
+     gap: 60px;
+     flex-wrap: wrap;
+
+  
+     
+}
+
+#chickenlolipop{
+    height: 35px;
+     width: 190px;
+     border-radius: 20px;
+     color: white;
+   background: rgba(18, 14, 14, 0.174);
+   backdrop-filter:  blur(10px);
+   position: absolute;
+    left: 30px;
+    top: 20px;
+   
+   
+      
+     border: none;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     padding-top: 1px;
+     font-weight: 700;
+}
+ 
+
+.recipebox1{
+   height: 600px;
+   width: 25%;
+   background-color: white;
+   margin-top: 40px;
+  
+     transition: 0.4s ease;
+    cursor: pointer;
+   border-radius: 20px;
+   position: relative;
+   display: none;
+}
+
+
+.recipebox1:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.18);
+}
+
+.recipebox1 img{
+    height: 340px;
+    width: 100%;
+      
+     position: relative;
+        border-top-right-radius: 15px;
+     border-top-left-radius: 15px;
+     border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+}
+ 
+ 
+.recipebox1 h2{
+    padding-left: 20px;
+    font-size: 28px;
+    color: #2D241E;
+    font-family: "karela";
+    padding-top: 20px;
+}
+
+.recipebox1 p{
+    padding-left: 20px;
+   
+     font-size: 16px;
+     color: #5F554D;
+}
+
+.loadmore-btn{
+ height: 40px;
+ width: 100px;
+ border: none;
+ background-color:  #667C8A;
+ color: white;
+ font-size: 16px;
+ border-radius: 10px;
+ font-family: "Karla";
+     transition: 0.3s ease;
+     cursor: pointer;
+
+
+
+}
+.loadmore-btn:hover {
+    
+    transform: translateY(-2px);
+}
+.loadmorediv{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+.recipebox.hide {
+    display: none;
+}
+.recipebox1.hide{
+    display: none;
+}
+
+ /* footer */
+
+ footer{
+    height: 300px;
+    width: 100%;
+    background: #2D241E;
+    margin-top: 10px;
+ }
+
+ .mainfooterdiv{
+display: flex;
+justify-content: space-around;
+gap: 30px;
+padding-top: 40px;
+ }
+
+ #titlefooter{
+    color: white;
+    font-size: 23px;
+
+ }
+
+.titleptext1{
+      color: #CFC6BD;
+       padding-top: 10px;
+}
+.titleptext2{
+     color: #CFC6BD;
+     
+}
+ 
+.secondtitle h3{
+    color: #bfb9b3;;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.secondtitle p{
+   color:  #CFC6BD;
+   padding-top: 7px;
+
+}
+#allrecipes{
+    padding-top: 17px;
+}
+
+.thirdtitle h3{
+ color: #bfb9b3;;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.thirdtitle p{
+     color:  #CFC6BD;
+   padding-top: 5px;
+}
+#thirdtitlep{
+    padding-top: 20px;
+}
+
+.icons{
+    font-size: 36px;
+    color: white;
+     
+   
+    margin-top: 40px;
+    
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+   
+}
+.line{
+    height: 0px;
+    width: 100%;
+    border: 0.5px solid #CFC6BD;
+    margin-top: 22px;
+}
+
+#lastp1{
+    text-align: center;
+    color:#CFC6BD;
+    font-size: 14px;
+    padding-top: 10px;
+}
+#lastp2{
+    text-align: center;
+    color:#CFC6BD;
+    font-size: 14px;
+   
+}
+
+.contactfooter h3{
+     color: #bfb9b3;;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contactfooter p{
+ color:  #CFC6BD;
+   padding-top: 5px;
+}
+#contactfp{
+    padding-top: 10px;
+}
+
+ 
+
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+
+.secdiv {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: recipeHeading 0.8s ease-out forwards;
+}
+
+@keyframes recipeHeading {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.buttonrecipes {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: filtersReveal 0.7s ease-out 0.25s forwards;
+}
+
+@keyframes filtersReveal {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.recipebox
+  {
+    opacity: 0;
+    transform: translateY(35px);
+    animation: recipeCardReveal 0.7s ease-out forwards;
+}
+
+
+.recipebox:nth-child(1)
+ {
+    animation-delay: 0.4s;
+}
+
+.recipebox:nth-child(2)
+  {
+    animation-delay: 0.5s;
+}
+
+.recipebox:nth-child(3)
+  {
+    animation-delay: 0.6s;
+}
+
+ 
+
+@keyframes recipeCardReveal {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ #hamburger:hover,
+#hamburger:focus,
+#hamburger:active {
+    background: transparent !important;
+    color: #2D241E;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.hamburger {
+    display: none;
+
+    
+    border: none;
+
+    color: #2D241E;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    padding: 5px;
+    margin: 0;
+
+    width: auto;
+    height: auto;
+}
+
+
+
+@media (max-width: 1100px) {
+
+    nav {
+        position: relative;
+    }
+
+    .mobile-menu {
+        display: none;
+
+        position: absolute;
+
+        /* Start directly below the navbar */
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        height: 260px;
+
+        background: #F8F5EF;
+
+        box-sizing: border-box;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-top: 20px;
+         font-family: "Karla", sans-serif;
+
+      
+    }
+
+    .mobile-menu.active {
+        display: flex  ;
+    }
+
+    .mobile-menu a {
+        color: black ;
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: 720;
+    }
+
+    .mobile-menu button {
+        display: block  ;
+
+        width: 130px;
+        height: 40px;
+
+        background: #B85C38;
+        color: white;
+        margin-right: 1px;
+        margin-top: 10px;
+      
+        border: none;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE CSS
+   Add this at the VERY BOTTOM of your CSS
+   ========================================================= */
+
+
+/* =========================
+   LARGE SCREENS
+   ========================= */
+
+@media (min-width: 1401px) {
+
+    nav {
+        width: 90%;
+    }
+    .hamburger{
+        display: none;
+    }
+    .mobile-menu{
+        display: none;
+    }
+
+    .line1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .buttonrecipes {
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
+
+}
+
+
+/* =========================
+   LAPTOP / DESKTOP
+   1025px - 1400px
+   ========================= */
+
+@media (max-width: 1400px) {
+
+    nav {
+        width: 94%;
+    }
+
+    .logodiv {
+        margin-left: 10px;
+    }
+
+     .hamburger{
+        display: none;
+    }
+    .mobile-menu{
+        display: none;
+    }
+    ul {
+        margin-left: 50px;
+        gap: 25px;
+    }
+
+    nav button {
+        margin-left: 20px;
+    }
+
+    .line1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .buttonrecipes {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 60px;
+    }
+
+    .recipebox,
+    .recipebox1 {
+        width: 30%;
+    }
+
+    .recipeboxmaincontainer {
+        gap: 35px;
+    }
+
+}
+
+
+/* =========================
+   TABLETS
+   769px - 1024px
+   ========================= */
+
+@media (max-width: 1024px) {
+
+    /* ---------- NAVBAR ---------- */
+
+     .navlinks{
+        display: none;
+     }
+     nav button{
+        display: none;
+        background-color: #F8F5EF;
+     }
+     .hamburger{
+        display: block;
+     }
+     
+    nav {
+        width: 95%;
+        height: 80px;
+    }
+
+    .logodiv {
+        margin-left: 0;
+    }
+
+    .logodiv h2 {
+        font-size: 18px;
+    }
+
+    .logodiv p {
+        font-size: 10px;
+    }
+
+    ul {
+        margin-left: 0;
+        gap: 18px;
+        font-size: 16px;
+    }
+
+    nav button {
+        width: 105px;
+        height: 38px;
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+
+    /* ---------- SECTION HEADING ---------- */
+
+    .secdiv h2 {
+        font-size: 18px;
+    }
+
+    .secdiv h3 {
+        font-size: 34px;
+    }
+
+    .line1 {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* ---------- FILTER ---------- */
+
+    .buttonrecipes {
+        width: 92%;
+        height: auto;
+        min-height: 90px;
+        margin-left: auto;
+        margin-right: auto;
+
+        gap: 20px;
+        padding: 15px;
+        align-items: center;
+    }
+
+    .buttonrecipes button {
+        margin-left: 0;
+    }
+
+    #desert-btn {
+        margin-right: 0;
+    }
+
+    .searchdiv input {
+        width: 280px;
+        margin-right: 0;
+    }
+
+
+    /* ---------- RECIPE TITLE ---------- */
+
+    .recipetitlediv h2 {
+        padding-left: 5%;
+        font-size: 36px;
+    }
+
+
+    /* ---------- RECIPE CARDS ---------- */
+
+    .recipebox,
+    .recipebox1 {
+        width: 42%;
+        height: 600px;
+    }
+
+    .recipeboxmaincontainer {
+        gap: 30px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+   481px - 768px
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* ---------- GENERAL ---------- */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    section {
+        width: 100%;
+        padding-bottom: 70px;
+    }
+
+
+    /* ---------- NAVBAR ---------- */
+
+    header {
+        width: 100%;
+    }
+
+    nav {
+        width: 94%;
+        height: auto;
+        min-height: 75px;
+
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .logodiv {
+        margin-left: 0;
+    }
+
+    .logodiv h2 {
+        font-size: 17px;
+    }
+
+    .logodiv p {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    ul {
+        order: 3;
+        width: 100%;
+
+        margin-left: 0;
+        padding-bottom: 12px;
+
+        justify-content: center;
+        gap: 18px;
+
+        font-size: 15px;
+    }
+
+    nav button {
+        width: 95px;
+        height: 36px;
+        font-size: 13px;
+        margin-left: 0;
+    }
+
+
+    /* ---------- SECTION HEADING ---------- */
+
+    .secdiv {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .secdiv h2 {
+        font-size: 16px;
+        padding-top: 30px;
+    }
+
+    .secdiv h3 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .secdiv p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .line1 {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* ---------- FILTER / SEARCH ---------- */
+
+    .buttonrecipes {
+        width: 92%;
+        height: auto;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding: 15px;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 10px;
+
+        border-radius: 15px;
+    }
+
+    .buttonrecipes button {
+        width: auto;
+        min-width: 75px;
+        height: 38px;
+
+        margin: 0;
+
+        font-size: 14px;
+    }
+
+    #desert-btn {
+        margin-right: 0;
+    }
+
+    .searchdiv {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .searchdiv input {
+        width: 100%;
+        max-width: 350px;
+
+        height: 40px;
+
+        margin: 0;
+
+        font-size: 14px;
+    }
+
+
+    /* ---------- RECIPE TITLE ---------- */
+
+    .recipetitlediv {
+        width: 100%;
+    }
+
+    .recipetitlediv h2 {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 30px;
+
+        font-size: 32px;
+    }
+
+
+    /* ---------- RECIPE CONTAINER ---------- */
+
+    .recipeboxmaincontainer {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 25px;
+    }
+
+
+    /* ---------- RECIPE CARD ---------- */
+
+    .recipebox,
+    .recipebox1 {
+        width: 90%;
+        max-width: 500px;
+
+        height: auto;
+        min-height: 560px;
+
+        margin-top: 20px;
+    }
+
+    .recipebox img,
+    .recipebox1 img {
+        width: 100%;
+        height: 300px;
+
+        object-fit: cover;
+    }
+
+    .recipebox h2,
+    .recipebox1 h2 {
+        padding-left: 18px;
+        padding-right: 18px;
+
+        font-size: 25px;
+    }
+
+    .recipebox p,
+    .recipebox1 p {
+        padding-left: 18px;
+        padding-right: 18px;
+
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    #pasta {
+        left: 20px;
+        top: 18px;
+    }
+
+    #chickenlolipop {
+        left: 20px;
+        top: 18px;
+
+        max-width: calc(100% - 40px);
+    }
+
+    .timeandservediv {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        gap: 10px;
+    }
+
+    .readrecipe {
+        margin-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .readrecipe button {
+        width: 160px;
+    }
+
+
+    /* ---------- LOAD MORE ---------- */
+
+    .loadmorediv {
+        margin-top: 30px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+        height: auto;
+        min-height: 500px;
+        padding-bottom: 25px;
+    }
+
+    .mainfooterdiv {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+        gap: 30px;
+
+        padding: 40px 20px 0;
+    }
+
+    .titleptext1,
+    .titleptext2,
+    .secondtitle p,
+    .thirdtitle p,
+    .contactfooter p {
+        font-size: 14px;
+    }
+
+    .icons {
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .line {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+   320px - 480px
+   ========================= */
+
+@media (max-width: 480px) {
+
+    /* ---------- NAVBAR ---------- */
+
+    nav {
+        width: 92%;
+        min-height: 70px;
+    }
+
+    .logodiv h2 {
+        font-size: 16px;
+    }
+
+    .logodiv p {
+        font-size: 8px;
+    }
+
+    nav button {
+        width: 85px;
+        height: 34px;
+
+        font-size: 12px;
+    }
+
+    ul {
+        gap: 12px;
+        font-size: 13px;
+    }
+
+
+    /* ---------- HEADING ---------- */
+
+    .secdiv h2 {
+        font-size: 14px;
+    }
+
+    .secdiv h3 {
+        font-size: 24px;
+    }
+
+    .secdiv p {
+        font-size: 13px;
+    }
+
+    .line1 {
+        width: 80%;
+    }
+
+
+    /* ---------- FILTER ---------- */
+
+    .buttonrecipes {
+        width: 94%;
+        padding: 12px;
+
+        gap: 8px;
+    }
+
+    .buttonrecipes button {
+        min-width: 65px;
+        width: auto;
+
+        padding: 0 10px;
+
+        font-size: 12px;
+    }
+
+    .searchdiv input {
+        width: 100%;
+        height: 38px;
+
+        font-size: 13px;
+    }
+
+
+    /* ---------- RECIPE TITLE ---------- */
+
+    .recipetitlediv h2 {
+        font-size: 27px;
+        padding-left: 6%;
+    }
+
+
+    /* ---------- CARDS ---------- */
+
+    .recipebox,
+    .recipebox1 {
+        width: 92%;
+        min-height: 530px;
+
+        border-radius: 15px;
+    }
+
+    .recipebox img,
+    .recipebox1 img {
+        height: 250px;
+
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .recipebox h2,
+    .recipebox1 h2 {
+        font-size: 23px;
+        padding-top: 16px;
+    }
+
+    .recipebox p,
+    .recipebox1 p {
+        font-size: 14px;
+    }
+
+
+    /* ---------- CATEGORY LABEL ---------- */
+
+    #pasta {
+        width: 70px;
+        height: 32px;
+
+        left: 15px;
+        top: 15px;
+
+        font-size: 11px;
+    }
+
+    #chickenlolipop {
+        width: auto;
+        height: 32px;
+
+        left: 15px;
+        top: 15px;
+
+        padding-left: 12px;
+        padding-right: 12px;
+
+        font-size: 10px;
+    }
+
+
+    /* ---------- TIME / SERVINGS ---------- */
+
+    .timeandservediv {
+        font-size: 12px;
+
+        justify-content: space-between;
+
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+
+    /* ---------- READ RECIPE ---------- */
+
+    .readrecipe button {
+        width: 145px;
+        height: 38px;
+
+        font-size: 15px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+        min-height: 550px;
+    }
+
+    .mainfooterdiv {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #titlefooter {
+        font-size: 20px;
+    }
+
+    .icons {
+        font-size: 30px;
+    }
+
+    #lastp1,
+    #lastp2 {
+        font-size: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+   BELOW 360px
+   ========================= */
+
+@media (max-width: 359px) {
+
+    nav {
+        width: 95%;
+    }
+
+    .logodiv h2 {
+        font-size: 14px;
+    }
+
+    nav button {
+        width: 75px;
+        font-size: 11px;
+    }
+
+    ul {
+        gap: 8px;
+        font-size: 12px;
+    }
+
+    .secdiv h3 {
+        font-size: 21px;
+    }
+
+    .buttonrecipes button {
+        min-width: 58px;
+        padding: 0 7px;
+        font-size: 11px;
+    }
+
+    .recipebox,
+    .recipebox1 {
+        width: 94%;
+    }
+
+}
+
+/* =========================================
+   MOBILE FILTER / SELECTION OPTIONS
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .buttonrecipes {
+        width: 92%;
+        height: auto;
+        min-height: 0;
+
+        margin: 30px auto 0;
+
+        padding: 15px;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 10px;
+
+        border-radius: 17px;
+    }
+
+    .buttonrecipes button {
+        width: auto;
+        min-width: 70px;
+        height: 38px;
+
+        margin: 0;
+
+        padding: 0 14px;
+
+        font-size: 14px;
+
+        border-radius: 10px;
+
+        flex-shrink: 0;
+    }
+
+    /* Removes the desktop spacing */
+    #desert-btn {
+        margin-right: 0;
+    }
+
+    /* Search box gets its own row */
+    .searchdiv {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        margin-top: 5px;
+    }
+
+    .searchdiv input {
+        width: 100%;
+        max-width: 400px;
+
+        height: 40px;
+
+        margin: 0;
+
+        padding-left: 15px;
+
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================
+   SMALL PHONES
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .buttonrecipes {
+        width: 92%;
+        padding: 12px;
+
+        gap: 8px;
+    }
+
+    .buttonrecipes button {
+        min-width: 62px;
+        height: 36px;
+
+        padding: 0 11px;
+
+        font-size: 13px;
+    }
+
+    .searchdiv {
+        margin-top: 4px;
+    }
+
+    .searchdiv input {
+        height: 38px;
+        font-size: 13px;
+    }
+    
+}
